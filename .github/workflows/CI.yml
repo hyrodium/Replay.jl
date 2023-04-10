@@ -53,6 +53,8 @@ jobs:
     steps:
       - name: Install asciinema
         run: python3 -m pip install asciinema
+      - name: Show install ID
+        run: asciinema auth
       - uses: actions/checkout@v2
       - uses: julia-actions/setup-julia@v1
         with:
